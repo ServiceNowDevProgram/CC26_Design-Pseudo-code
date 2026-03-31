@@ -37,3 +37,12 @@ do {
   build();
   improve();
 } while (possibility.exists());
+
+// --- #7 --- by Kristen Dettman
+var everyone = new GlideRecord('sys_user');
+everyone.addQuery('role', 'IN', 'developer,admin,architect,analyst');
+everyone.addQuery('active', true);
+everyone.query();
+while (everyone.next()) {
+    community.add(everyone);  // different roles, one community
+}
