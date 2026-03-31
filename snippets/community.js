@@ -46,3 +46,33 @@ everyone.query();
 while (everyone.next()) {
     community.add(everyone);  // different roles, one community
 }
+
+// --- #8 ---
+if (current.update()) {
+    return (╯°□°)╯︵ ┻━┻;
+}
+// Stop trying to make current.update() happen.
+
+// --- #9 --- by Astrid
+let rec = new GlideRecord('sys_audit');
+rec.query(); // I like to live dangerously
+
+// --- #10 --- by eric
+var grSysUser = new GlideRecord('sys_user');
+grSysUser.addEncodedQuery("user_name=abel.tuter");
+grSysUser.orderBy('name');
+grSysUser.setLimit(20);
+grSysUser.query();
+
+// --- #11 --- by eric
+if (gr.next()) {
+    gs.log("weeee");
+}
+// WHY ISN'T THIS WORKING?!
+// (forgot to .query())
+
+// --- #12 --- by jarodm
+if (NowUniversity.courseState == 'completed') {
+    excitement.goBoom();
+    Regrets.goPoof();
+}

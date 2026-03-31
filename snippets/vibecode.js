@@ -70,3 +70,5 @@ do {
   improve();
 } while (possibility.exists());
 
+// --- #10 --- by eric
+return "[Object object]";

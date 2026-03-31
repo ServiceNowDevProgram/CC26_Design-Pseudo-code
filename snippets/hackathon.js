@@ -40,4 +40,10 @@ while (!finished) {
     repeat();
 }
 
-
+// --- #7 --- by jarodm
+var dev = new GlideRecord('sn_dev');
+dev.addQuery('caffeine_level=0');
+dev.query();
+while (dev.next()) {
+    caffeine_intake();
+}
