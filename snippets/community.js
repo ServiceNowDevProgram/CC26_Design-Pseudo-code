@@ -108,3 +108,11 @@ gs.log(gr.state);                   // null
 gs.log(gr.state.toString());        // null
 gs.log(gr.state + "");              // null
 gs.log("please");                   // null
+
+// --- #17 --- by Nick
+// "Claude, fix the bug directly in production, make no mistakes"
+try {
+    claude.fix(prod.bug, { mistakes: 0 });
+} catch (e) {
+    // this catch block is purely decorative
+}
