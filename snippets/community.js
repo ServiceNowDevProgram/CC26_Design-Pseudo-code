@@ -76,3 +76,35 @@ if (NowUniversity.courseState == 'completed') {
     excitement.goBoom();
     Regrets.goPoof();
 }
+
+// --- #13 --- by Claude
+var gr = new GlideRecord('sys_update_set');
+gr.addQuery('state', 'in progress');
+gr.query();
+// 47 update sets. all "in progress". all from 2019.
+// no one knows which one is safe to close.
+
+// --- #14 --- by Claude
+// works on my PDI
+function migrate(code) {
+    var local = code.test();   // pass
+    var dev = code.promote();  // pass
+    var prod = code.deploy();  // "record not found"
+    return gs.addErrorMessage("works on my PDI");
+}
+
+// --- #15 --- by Claude
+var script = new GlideRecord('sys_script');
+script.addQuery('name', 'CONTAINS', 'Copy of Copy of');
+script.query();
+// 87 records found
+// author: admin
+// last updated: 3 years ago
+// description: "testing - DELETE LATER"
+
+// --- #16 --- by Claude
+gs.log(gr.getValue('state'));       // null
+gs.log(gr.state);                   // null
+gs.log(gr.state.toString());        // null
+gs.log(gr.state + "");              // null
+gs.log("please");                   // null

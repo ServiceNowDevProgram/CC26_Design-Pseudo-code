@@ -72,3 +72,22 @@ do {
 
 // --- #10 --- by eric
 return "[Object object]";
+
+// --- #11 --- by Claude
+function deployOnFriday(changes) {
+    if (today === 'Friday') {
+        return "that's a Monday problem";
+    }
+    if (today === 'Monday') {
+        return "too early in the week";
+    }
+    return deployOnFriday(changes); // try again tomorrow
+}
+
+// --- #12 --- by Claude
+var updateSet = new GlideRecord('sys_remote_update_set');
+updateSet.addQuery('name', 'CONTAINS', 'DO NOT PROMOTE');
+updateSet.query();
+if (updateSet.next()) {
+    updateSet.promote(); // you had one job
+}

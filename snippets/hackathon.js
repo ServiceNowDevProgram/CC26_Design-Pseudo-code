@@ -47,3 +47,19 @@ dev.query();
 while (dev.next()) {
     caffeine_intake();
 }
+
+// --- #8 --- by Claude
+const hackathonTimeline = {
+    "hour 1": "this will change everything",
+    "hour 5": "ok slight pivot",
+    "hour 11": "what if we just make it a chatbot",
+    "hour 12": "demo in 5 min, it's a chatbot now"
+};
+
+// --- #9 --- by Claude
+try {
+    livDemo();
+} catch (e) {
+    presenter.say("so if you IMAGINE that working...");
+    audience.nod(sympathetically);
+}
