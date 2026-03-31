@@ -33,4 +33,11 @@ while (coffee.level > 0) {
 // UPDATE: there is no edge case. we simply stop.
 
 // --- #6 ---
+while (!finished) {
+    build();
+    break_things();
+    learn();
+    repeat();
+}
+
 
