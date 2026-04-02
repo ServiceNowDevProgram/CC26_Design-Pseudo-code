@@ -63,3 +63,23 @@ try {
     presenter.say("so if you IMAGINE that working...");
     audience.nod(sympathetically);
 }
+
+// --- #10 --- by Jonathan Sandoval
+const squad = ['Earl', 'Lauren', 'Kristy ', 'Laszlo','Travis'];
+
+gs.info('📟 INITIALIZING HACKATHON BOOT SEQUENCE...');
+
+squad.forEach(dev => {
+    let roster = new GlideRecord('x_snc_hackathon_roster');
+    roster.initialize();
+    roster.hacker_handle = handle;
+    roster.status = 'ready';
+});
+
+if (roster.status = 'ready') {
+    gs.info('🔥 Squad assembled. START HACKING!');
+
+} else {
+    gs.warn('⚠️ Missing caffeine or teammates.');
+}
+
