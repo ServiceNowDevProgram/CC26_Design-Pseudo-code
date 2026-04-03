@@ -65,7 +65,7 @@ try {
 }
 
 // --- #10 --- by Jonathan Sandoval
-const squad = ['Earl', 'Lauren', 'Kristy ', 'Laszlo','Travis'];
+const squad = ['Earl', 'Lauren', 'Kristy ', 'Laszlo','Travis','Sujan'];
 
 gs.info('📟 INITIALIZING HACKATHON BOOT SEQUENCE...');
 
