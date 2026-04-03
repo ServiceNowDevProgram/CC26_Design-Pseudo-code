@@ -8,6 +8,8 @@ Got a snippet idea? Add it to the right file and open a PR.
    - `snippets/vibecode.js` — AI, vibe coding, modern dev life
    - `snippets/hackathon.js` — hackathon chaos, building fast, shipping
    - `snippets/community.js` — collaboration, community, showing up for each other
+   - `snippets/experts.js` — asking questions, learning from experts, impostor syndrome
+   - `snippets/coffee.js` — coffee-fuelled ideas, hallway conversations, the magic of a break
 
 2. Add your snippet at the bottom of the file with the next sequential number:
    ```js
